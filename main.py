@@ -1,7 +1,9 @@
 from requests import session
+from auth_data import token
 import vk_api
 
-session = vk_api.VkApi(token='4241c8084241c8084241c808e44150f6ca442414241c808211dea98b9fb21e3557ebf6c')
+#actual_token = token
+session = vk_api.VkApi(token=token)
 vk1 = session.get_api()
 
 def get_user_friends(user_id, fields):
@@ -9,3 +11,6 @@ def get_user_friends(user_id, fields):
     print(friends)
     
 get_user_friends(int(input()), "nickname")
+
+#189907725
+#2097884
