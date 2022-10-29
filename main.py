@@ -2,7 +2,6 @@ from requests import session
 from auth_data import token
 import vk_api
 
-#actual_token = token
 session = vk_api.VkApi(token=token)
 vk1 = session.get_api()
 
