@@ -9,7 +9,7 @@ def get_user_friends(user_id, fields):
     friends = session.method("friends.get", {"user_id": user_id, "fields": fields})
     print(friends)
     
-get_user_friends(int(input()), "nickname")
+get_user_friends(189907725, "nickname")
 
 #189907725
 #2097884

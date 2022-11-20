@@ -1,6 +1,6 @@
 import requests
 
-rec = requests.get('https://oauth.vk.com/access_token?client_id=51461826&client_secret=OQxRqwIiV2muJFJCXYCe&redirect_uri=http://127.0.0.1&code=13b67e52e0d225f55b')
+rec = requests.get('https://oauth.vk.com/access_token?client_id=51461826&client_secret=OQxRqwIiV2muJFJCXYCe&redirect_uri=http://127.0.0.1&code=b6cba38a2bed6e0a3b')
 rec = rec.json()
 
 token = rec.get('access_token')
